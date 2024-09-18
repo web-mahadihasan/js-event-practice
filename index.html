@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events Handel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Js onclick Events</h1>
+    </header>
+    <main>
+        <h2 id="main-heading">Change the background color <span id="color-name">white</span></h2>
+        <!-- option 1 -->
+        <button onclick="document.body.style.backgroundColor = 'yellow'; document.getElementById('main-heading').style.color = 'black'; document.getElementById('color-name').innerText = 'Yellow'">Make yellow</button>
+        <!-- option 2 -->
+         <button onclick="makeGreen()">Make green</button>
+
+         <!-- option 3  -->
+          <button id="make-purple">Make purple</button>
+        <!-- option 3  alternative -->
+         <button id="make-steelblue">Make steelblue</button>
+
+        <!-- option 4  -->
+        <button id="make-goldenrod">Make goldenrod</button>
+        <!-- option 4  alternative -->
+         <button id="make-pink">Make pink</button>
+        <!-- option 4  alternative Final we use it-->
+         <button id="make-aquamarine">Make aquamarine</button>
+
+        <hr>
+         <section>
+            <h1>Display your Review</h1>
+            <hr>
+            <div>
+                <div>
+                    <label for="user-fName">Your First Name</label>
+                    <br>
+                    <input id="user-fName" type="text" required>
+                </div>
+                <br>
+                <div>
+                    <label for="last-name">Your Last Name</label>
+                    <br>
+                    <input id="user-lName" type="text" required>
+                </div>
+                <br>
+                <div>
+                    <label for="comment">Your reveiw: </label>
+                    <br>
+                    <textarea name="" id="comment" cols="70" rows="5" required></textarea>
+                </div>
+                <button id="submit">Submit Review</button>
+                <p>or</p>
+                <input id="removed-input" type="text" placeholder="Enter 'removed' to remove comment">
+                <button id="removed-btn" disabled>Remove Review</button>
+            </div>
+            <section>
+                <h2>Our user review</h2>
+                <div id="comment-container">
+                    <div>
+                        <h3>Jonn Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sapiente in labore similique sunt. Iusto beatae
+                            dolorem magnam laudantium earum.</p>
+                    </div>
+                    <div>
+                        <h3>Jonn Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sapiente in labore similique sunt. Iusto beatae
+                            dolorem magnam laudantium earum.</p>
+                    </div>
+                    <div>
+                        <h3>Jonn Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sapiente in labore similique sunt. Iusto beatae
+                            dolorem magnam laudantium earum.</p>
+                    </div>
+                    <div>
+                        <h3>Jonn Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sapiente in labore similique sunt. Iusto beatae
+                            dolorem magnam laudantium earum.</p>
+                    </div>
+                    <div>
+                        <h3>Jonn Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sapiente in labore similique sunt. Iusto beatae
+                            dolorem magnam laudantium earum.</p>
+                    </div>
+                </div>
+            </section>
+         </section>
+    </main>
+
+
+    <script src="./js/events.js"></script>
+    <script src="./js/events-style.js"></script>
+</body>
+</html>
